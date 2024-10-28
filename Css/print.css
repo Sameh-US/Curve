@@ -1,0 +1,57 @@
+@media print {
+
+    .printcycle {
+        font-size: 2.9rem;
+        font-weight: 800;
+        color: var(--color1);
+        font-family: var(--fontNumber);
+        margin: 0 auto;
+        padding: 0;
+        position: relative;
+        text-align: center;
+    }
+
+    .printcycle::before {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: 5px;
+        background: var(--color4);
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .mainCurveFarm .mainCurveout .Notes {
+        font-size: 1.3rem;
+        font-weight: 500;
+        color: var(--color1);
+        text-align: start;
+        padding: 2px;
+        width: 100%;
+    }
+
+    .mainCurveFarm .mainCurveout .Notes textarea {
+        border: 1px solid var(--color4);
+        border-radius: 5px;
+        background-color: var(--color3);
+        color: var(--colorWiht);
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        text-align: start;
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 100%
+    }
+
+    .mainCurveFarm .mainCurveout .Notes textarea:hover {
+        border-radius: 5px;
+        background-color: var(--color3);
+        color: #000000;
+    }
+
+
+}
